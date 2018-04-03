@@ -17,6 +17,7 @@
 		6AA11924204E74AA0018F6F1 /* QHNavigationControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA11923204E74AA0018F6F1 /* QHNavigationControllerTransition.m */; };
 		6AA11927204E758E0018F6F1 /* QHPushAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA11926204E758E0018F6F1 /* QHPushAnimationTransition.m */; };
 		6AA1192A204E77D90018F6F1 /* MSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA11929204E77D90018F6F1 /* MSNavigationController.m */; };
+		D474DC4A7390BC783391B21F /* libPods-douyin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36231EA06C5C289D336C262 /* libPods-douyin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		341B0DC9822EDFF8117C35DA /* Pods-douyin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyin.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyin/Pods-douyin.release.xcconfig"; sourceTree = "<group>"; };
 		6AA118EA204E6CEB0018F6F1 /* douyin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA118ED204E6CEC0018F6F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6AA118EE204E6CEC0018F6F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		6AA11926204E758E0018F6F1 /* QHPushAnimationTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QHPushAnimationTransition.m; sourceTree = "<group>"; };
 		6AA11928204E77D90018F6F1 /* MSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSNavigationController.h; sourceTree = "<group>"; };
 		6AA11929204E77D90018F6F1 /* MSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSNavigationController.m; sourceTree = "<group>"; };
+		A36231EA06C5C289D336C262 /* libPods-douyin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douyin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6C98834A558260D5236393 /* Pods-douyin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyin/Pods-douyin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D474DC4A7390BC783391B21F /* libPods-douyin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02DD9A6E3D40A9C87D300760 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE6C98834A558260D5236393 /* Pods-douyin.debug.xcconfig */,
+				341B0DC9822EDFF8117C35DA /* Pods-douyin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F0CBF73D4097A4BE4A00078 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A36231EA06C5C289D336C262 /* libPods-douyin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AA118E1204E6CEA0018F6F1 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +115,8 @@
 				6AA11905204E6CED0018F6F1 /* douyinTests */,
 				6AA11910204E6CED0018F6F1 /* douyinUITests */,
 				6AA118EB204E6CEB0018F6F1 /* Products */,
+				02DD9A6E3D40A9C87D300760 /* Pods */,
+				2F0CBF73D4097A4BE4A00078 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA11916204E6CED0018F6F1 /* Build configuration list for PBXNativeTarget "douyin" */;
 			buildPhases = (
+				9F6FBC77D95AD1825CC10B95 /* [CP] Check Pods Manifest.lock */,
 				6AA118E6204E6CEB0018F6F1 /* Sources */,
 				6AA118E7204E6CEB0018F6F1 /* Frameworks */,
 				6AA118E8204E6CEB0018F6F1 /* Resources */,
+				406ECCD19D294798E23AEDC8 /* [CP] Embed Pods Frameworks */,
+				C61BF74AE0BFCAB3F2FFA41E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +298,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		406ECCD19D294798E23AEDC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyin/Pods-douyin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6FBC77D95AD1825CC10B95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-douyin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C61BF74AE0BFCAB3F2FFA41E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-douyin/Pods-douyin-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyin/Pods-douyin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6AA118E6204E6CEB0018F6F1 /* Sources */ = {
@@ -425,6 +506,7 @@
 		};
 		6AA11917204E6CED0018F6F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6C98834A558260D5236393 /* Pods-douyin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -441,6 +523,7 @@
 		};
 		6AA11918204E6CED0018F6F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341B0DC9822EDFF8117C35DA /* Pods-douyin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

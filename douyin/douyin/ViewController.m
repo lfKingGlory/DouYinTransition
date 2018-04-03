@@ -28,14 +28,14 @@
 //    [self.navigationController pushViewController:v1 animated:YES];
 //}
 
-//- (void)viewWillAppear:(BOOL)animated {
-//    [super viewWillAppear:animated];
-//    [self.navigationController setNavigationBarHidden:YES animated:NO];
-//}
-//
-//- (void)viewWillDisappear:(BOOL)animated {
-//    [super viewWillDisappear:animated];
-//    [self.navigationController setNavigationBarHidden:NO animated:YES];
-//}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 
 @end

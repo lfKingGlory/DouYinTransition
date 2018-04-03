@@ -29,8 +29,8 @@
     [self setNavigationBarHidden:YES animated:NO];
     self.interactivePopGestureRecognizer.delegate = self;
 
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-//    [self.view addGestureRecognizer:tap];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [self.view addGestureRecognizer:tap];
     
 //    UISwipeGestureRecognizer *sges = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(tap1:)];
 //    sges.direction = UISwipeGestureRecognizerDirectionLeft;

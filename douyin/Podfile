@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+target 'douyin' do
+ pod 'AFNetworking'
+ pod 'SDWebImage'
+ pod 'MBProgressHUD'
+ pod 'FMDB'
+ pod 'Masonry'
+ pod 'MJExtension'
+ pod 'MJRefresh'
+end
+
