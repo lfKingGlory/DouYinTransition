@@ -19,14 +19,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     self.navigationItem.title = @"ViewController";
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-//    [self.view addGestureRecognizer:tap];
 }
 
-//- (void)tap:(UITapGestureRecognizer *)tap {
-//    ViewController1 *v1 = [ViewController1 new];
-//    [self.navigationController pushViewController:v1 animated:YES];
-//}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
