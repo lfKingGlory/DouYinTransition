@@ -24,6 +24,9 @@
     MSNavigationController *nav = [[MSNavigationController alloc] initWithRootViewController:v];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
+    NSLog("1234567");
+    
     return YES;
 }
 
