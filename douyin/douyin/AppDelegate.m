@@ -29,6 +29,8 @@
     NSLog("1234567");
     NSLog("fghjk");
     
+    NSLog("test2")
+    
     return YES;
 }
 
