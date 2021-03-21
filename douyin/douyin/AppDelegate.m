@@ -16,6 +16,7 @@
 
 @implementation AppDelegate
 
+// NSLog("testtest3test3test3test3test33");
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -28,7 +29,8 @@
     NSLog("1234567");
     NSLog("fghjk");
     
-    NSLog("testtest2test2test2tdweest2test2test22")
+    NSLog("testtest2test2test2test2test2test22")
+
     
     return YES;
 }
