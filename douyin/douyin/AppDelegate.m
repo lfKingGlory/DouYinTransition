@@ -26,6 +26,7 @@
     [self.window makeKeyAndVisible];
     
     NSLog("1234567");
+    NSLog("fghjk");
     
     return YES;
 }
