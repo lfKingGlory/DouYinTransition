@@ -29,7 +29,7 @@
     NSLog("1234567");
     NSLog("fghjk");
     
-    NSLog("test2")
+    NSLog("testtest2test2test2test2test2test22")
     
     return YES;
 }
